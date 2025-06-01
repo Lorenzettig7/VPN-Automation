@@ -6,6 +6,7 @@ This PowerShell script is designed to enhance endpoint VPN security on Windows s
 - Enforcing a session timeout (default: 30 minutes)
 
 These policies help reduce lateral movement and ensure idle VPN sessions don’t remain open indefinitely.
+
 Run as Administrator. Designed for local use or GPO deployment.
 ---
 
