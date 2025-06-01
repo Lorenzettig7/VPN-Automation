@@ -6,7 +6,7 @@ This PowerShell script is designed to enhance endpoint VPN security on Windows s
 - Enforcing a session timeout (default: 30 minutes)
 
 These policies help reduce lateral movement and ensure idle VPN sessions don’t remain open indefinitely.
-
+Run as Administrator. Designed for local use or GPO deployment.
 ---
 
 ## Script: `Set-VPNPolicy.ps1`
@@ -19,4 +19,4 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RasMan\Config" -
 Get-VpnConnection | ForEach-Object {
     Set-VpnConnection -Name $_.Name -SplitTunneling $false -Force
 }
-Run as Administrator. Designed for local use or GPO deployment.
+
