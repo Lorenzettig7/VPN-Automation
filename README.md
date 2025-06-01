@@ -19,3 +19,4 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RasMan\Config" -
 Get-VpnConnection | ForEach-Object {
     Set-VpnConnection -Name $_.Name -SplitTunneling $false -Force
 }
+Run as Administrator. Designed for local use or GPO deployment.
